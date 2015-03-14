@@ -13,7 +13,7 @@ public class RobotSpec {
 	Robot robot = new RobotImpl();
 
 	/**
-	 * 
+	 * This method is used to test public method start robot 
 	 */
 	@Test
 	public void testStartRobot() {
@@ -23,7 +23,7 @@ public class RobotSpec {
 	}
 	
 	/**
-	 * 
+	 * This method is used to test public method start robot with distance 
 	 */
 	@Test
 	public void testStartRobotWithDistance() {
@@ -33,7 +33,7 @@ public class RobotSpec {
 	}
 	
 	/**
-	 * 
+	 * This method is used to test public method start robot with weight
 	 */
 	@Test
 	public void testStartRobotWithWeight() {
@@ -43,7 +43,7 @@ public class RobotSpec {
 	}
 	
 	/**
-	 * 
+	 * This method is used to test public method start robot with distance and weight
 	 */
 	@Test
 	public void testStartRobotWithDistanceWithWeight() {

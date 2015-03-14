@@ -9,10 +9,10 @@ import com.saurabh.test.utility.CommonProcess;
  */
 public class RobotImpl extends CommonProcess implements Robot {
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * This method is used to start the robot
 	 * 
-	 * @see com.saurabh.test.robot.Robot#startRobot()
+	 * @return
 	 */
 	@Override
 	public RobotStatus startRobot() {
@@ -21,10 +21,11 @@ public class RobotImpl extends CommonProcess implements Robot {
 		return status;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * This method is used to start the robot with the given distance
 	 * 
-	 * @see com.saurabh.test.robot.Robot#startRobot(double)
+	 * @param warkingDistance
+	 * @return
 	 */
 	@Override
 	public RobotStatus startRobot(double warkingDistance) {
@@ -35,10 +36,11 @@ public class RobotImpl extends CommonProcess implements Robot {
 		return status;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * This method is used to start the robot with the given weight
 	 * 
-	 * @see com.saurabh.test.robot.Robot#startRobot(int)
+	 * @param weight
+	 * @return
 	 */
 	@Override
 	public RobotStatus startRobot(int weight) {
@@ -51,10 +53,12 @@ public class RobotImpl extends CommonProcess implements Robot {
 		return status;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * This method is used to start the robot with the given distance and weight
 	 * 
-	 * @see com.saurabh.test.robot.Robot#startRobot(double, int)
+	 * @param warkingDistance
+	 * @param weight
+	 * @return
 	 */
 	@Override
 	public RobotStatus startRobot(double warkingDistance, int weight) {
@@ -70,6 +74,9 @@ public class RobotImpl extends CommonProcess implements Robot {
 	}
 
 	/**
+	 * This method is used to start robot walk and set all the variable to make
+	 * robot walk
+	 * 
 	 * @param distanceToCover
 	 * @param weight
 	 * @return
@@ -91,6 +98,8 @@ public class RobotImpl extends CommonProcess implements Robot {
 	}
 
 	/**
+	 * This method is used to make robot walk
+	 * 
 	 * @param distanceWalked
 	 * @param distanceToWalk
 	 * @param percentage
@@ -126,6 +135,8 @@ public class RobotImpl extends CommonProcess implements Robot {
 	}
 
 	/**
+	 * This recursive method is used to make robot walk
+	 * 
 	 * @param distanceWalked
 	 * @param distanceToWalk
 	 * @param percentage

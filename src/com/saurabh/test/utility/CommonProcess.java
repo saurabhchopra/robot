@@ -9,6 +9,8 @@ public class CommonProcess {
 	public static final double KM_TO_METER = 1000;
 
 	/**
+	 * This method is used to convert kilometer to meter
+	 * 
 	 * @param km
 	 * @return
 	 */
@@ -17,6 +19,8 @@ public class CommonProcess {
 	}
 
 	/**
+	 * This method is used to convert meter to kilometer
+	 * 
 	 * @param meter
 	 * @return
 	 */
@@ -25,6 +29,8 @@ public class CommonProcess {
 	}
 
 	/**
+	 * This method is used to get the total distance not covered in kilometer
+	 * 
 	 * @param distanceToCover
 	 * @param distanceWalked
 	 * @return
@@ -35,6 +41,8 @@ public class CommonProcess {
 	}
 
 	/**
+	 * This method is used to print message
+	 * 
 	 * @param message
 	 */
 	public static void displayMessage(String message) {
@@ -42,6 +50,8 @@ public class CommonProcess {
 	}
 
 	/**
+	 * This method is used to display overweight messages
+	 * 
 	 * @return
 	 */
 	public static RobotStatus displayOverWeightMessages() {
@@ -51,6 +61,8 @@ public class CommonProcess {
 	}
 
 	/**
+	 * This method is used to display status messages
+	 * 
 	 * @param status
 	 */
 	public static void displayStatusMessage(RobotStatus status) {
