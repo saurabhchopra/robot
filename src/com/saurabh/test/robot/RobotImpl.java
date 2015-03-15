@@ -98,43 +98,6 @@ public class RobotImpl extends CommonProcess implements Robot {
 	}
 
 	/**
-	 * This method is used to make robot walk
-	 * 
-	 * @param distanceWalked
-	 * @param distanceToWalk
-	 * @param percentage
-	 * @param isRedLightOn
-	 * @param addonPercentageForWeight
-	 * @param distanceToCover
-	 * @return
-	 */
-	private RobotStatus walkRobot(double distanceWalked, double distanceToWalk,
-			double percentage, boolean isRedLightOn,
-			double addonPercentageForWeight, double distanceToCover) {
-		for (distanceWalked = 1; distanceWalked <= distanceToWalk; distanceWalked++) {
-			percentage = (((TOTAL_METER - distanceWalked) / TOTAL_METER) * 100);
-			percentage = percentage
-					- (meterConvertToKm(distanceWalked) * addonPercentageForWeight);
-			if (distanceWalked % KM_TO_METER == 0) {
-				displayMessage("Distance covered: " + distanceWalked
-						/ KM_TO_METER + "Km");
-			}
-
-			if (percentage < BATTERY_LOW_MARK && !isRedLightOn) {
-				displayMessage("Head red light on");
-				isRedLightOn = true;
-			}
-
-			if (distanceToWalk == distanceWalked || percentage < .01) {
-				break;
-			}
-		}
-		return new RobotStatus(meterConvertToKm(distanceWalked),
-				Math.round(percentage), getdistanceNotCovered(distanceToCover,
-						distanceWalked));
-	}
-
-	/**
 	 * This recursive method is used to make robot walk
 	 * 
 	 * @param distanceWalked
